@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; worker-src 'self'; child-src 'self';"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LimitClean Console</title>
+    <link rel="icon" href="assets/logo.svg" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell" aria-live="polite">
+      <header class="topbar" role="banner">
+        <div class="brand">
+          <img src="assets/logo.svg" alt="LimitClean" class="brand__logo" />
+          <span class="brand__title">LimitClean Console</span>
+        </div>
+        <nav aria-label="Navegação principal">
+          <ul class="nav__links" id="app-nav"></ul>
+        </nav>
+      </header>
+      <main id="view-container" class="view-container" tabindex="-1"></main>
+      <footer class="footer" role="contentinfo">
+        <p>
+          Plataforma demonstrativa local. Não utilizar em produção. Dados persistidos
+          em IndexedDB.
+        </p>
+      </footer>
+    </div>
+    <noscript>
+      <p>Ative o JavaScript para utilizar a aplicação.</p>
+    </noscript>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
