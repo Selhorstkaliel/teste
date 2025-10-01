@@ -23,7 +23,7 @@ const createScheduler = () => {
 const registerServiceWorker = async () => {
   if (!('serviceWorker' in navigator)) return;
   try {
-    await navigator.serviceWorker.register('./js/sw.js');
+    await navigator.serviceWorker.register('./sw.js', { scope: './' });
   } catch (error) {
     console.warn('SW registration failed', error);
   }

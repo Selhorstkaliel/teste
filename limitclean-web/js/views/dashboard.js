@@ -1,4 +1,4 @@
-import '../vendor/chart.umd.js';
+import '../../vendor/chart.umd.js';
 import { listEntries, getRecentEntries } from '../services/entries.js';
 import { formatDate, startOfMonth, endOfMonth, startOfYear, endOfYear, startOfFortnight, endOfFortnight } from '../utils/dates.js';
 import { toBRL } from '../utils/money.js';
